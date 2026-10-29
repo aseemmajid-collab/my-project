@@ -3,243 +3,185 @@
 // it from App.tsx.
 
 export const brand = {
-  name: 'Your Company',
-  tagline: 'The calm workspace for teams that ship',
+  name: 'Khair',
+  tagline: 'Sarees, jewellery and evenings worth dressing for',
 }
 
 export const nav = {
   links: [
-    { label: 'Product', href: '#features' },
-    { label: 'How it works', href: '#how' },
-    { label: 'Customers', href: '#customers' },
-    { label: 'Pricing', href: '#pricing' },
+    { label: 'Collections', href: '#collections' },
+    { label: 'Our craft', href: '#craft' },
+    { label: 'Lookbook', href: '#lookbook' },
+    { label: 'Stories', href: '#customers' },
   ],
-  signIn: { label: 'Sign in', href: '#' },
-  cta: { label: 'Get started', href: '#cta' },
+  signIn: { label: 'Stores', href: '#stores' },
+  cta: { label: 'Book a fitting', href: '#cta' },
 }
 
 export const hero = {
-  badge: 'Now in public beta',
-  title: ['Plan, build and ship', 'from one calm place'],
-  highlight: 'calm',
+  badge: 'The Festive Edit has arrived',
+  title: ['Heirloom weaves for', 'modern evenings'],
+  highlight: 'modern',
   description:
-    'Bring roadmaps, work and conversations together. Fewer tabs, fewer meetings, and a team that always knows what matters this week.',
-  primary: { label: 'Start for free', href: '#cta' },
-  secondary: { label: 'See how it works', href: '#how' },
-  footnote: 'Free for up to 10 people. No card required.',
+    'Handloom sarees from Banaras and Kanchipuram, jewellery set by hand in Jaipur, and party wear cut for how you actually move. Made in small runs with the artisans who keep the craft alive.',
+  primary: { label: 'Explore the collection', href: '#collections' },
+  secondary: { label: 'Book a fitting', href: '#cta' },
+  footnote: 'Complimentary fall & pico on every saree. Ships worldwide.',
+  // Editorial collage cards under the hero copy.
+  collage: [
+    { label: 'Banarasi silk', place: 'Varanasi', hue: 352, weave: 'kadhua' },
+    { label: 'Kundan set', place: 'Jaipur', hue: 38, weave: '22k plate' },
+    { label: 'Emerald sharara', place: 'Our studio', hue: 158, weave: 'georgette' },
+  ],
 }
 
-export const logos = ['Northwind', 'Vertex', 'Lumen', 'Halcyon', 'Fathom', 'Orbital', 'Meridian', 'Quill']
-
 export const features = {
-  eyebrow: 'Everything in one place',
-  title: 'Built for the way modern teams work',
-  description: 'Each part is simple on its own. Together they replace a stack of tools.',
+  eyebrow: 'The collections',
+  title: 'Three wardrobes, one standard',
+  description: 'Each piece is woven, set or cut in small runs — then finished by hand before it reaches you.',
   items: [
     {
-      key: 'collab',
-      title: 'Work together in real time',
-      description: 'Presence, cursors and comments on every document and board.',
+      key: 'sarees',
+      title: 'Handloom sarees',
+      description: 'Banaras, Kanchipuram and Chanderi on pit looms, with real zari and a fall you can feel.',
       span: 2,
     },
     {
-      key: 'automation',
-      title: 'Automate the busywork',
-      description: 'Route, assign and notify with rules you write in plain language.',
+      key: 'jewellery',
+      title: 'Jewellery',
+      description: 'Kundan, polki and temple pieces, set and checked in Jaipur.',
       span: 1,
     },
     {
-      key: 'analytics',
-      title: 'See progress at a glance',
-      description: 'Live dashboards that update as the work moves.',
-      span: 1,
-    },
-    {
-      key: 'integrations',
-      title: 'Connects to your stack',
-      description: 'GitHub, Slack, Figma, Linear and 60 more, ready in a click.',
-      span: 2,
+      key: 'party',
+      title: 'Party wear & made to measure',
+      description: 'Lehengas, shararas and pre-draped saris — cut, lined and fitted to your measurements.',
+      span: 3,
     },
   ],
 }
 
 export const steps = {
-  eyebrow: 'How it works',
-  title: 'Up and running before lunch',
+  eyebrow: 'The making',
+  title: 'From loom to living room',
+  description:
+    'Khair is one person and a small circle of weavers and tailors. The same hands pick up your email, check your measurements and pack your box.',
   items: [
     {
-      title: 'Import what you have',
-      description: 'Bring projects from Jira, Notion or a spreadsheet. We keep the history.',
+      title: 'We go to the loom',
+      description: 'We buy from weaving families we know by name, at a price that keeps the loom running next season.',
     },
     {
-      title: 'Shape the week',
-      description: 'Turn goals into a short, visible plan everyone can see and own.',
+      title: 'We finish by hand',
+      description: 'Falling, piping, lining and polishing happen in our own studio — nothing is sent out and forgotten.',
     },
     {
-      title: 'Ship and learn',
-      description: 'Updates write themselves from the work. Review, adjust, repeat.',
+      title: 'We fit it to you',
+      description: 'Send measurements or visit a studio. Every order leaves pressed, boxed and ready to wear.',
     },
   ],
 }
 
 export const showcase = {
-  eyebrow: 'One workspace, many views',
-  title: 'The same work, seen your way',
+  eyebrow: 'Lookbook',
+  title: 'One season, three moods',
   tabs: [
     {
-      key: 'inbox',
-      title: 'Inbox',
-      description: 'A single stream of what needs you, ordered by what matters.',
+      key: 'bridal',
+      title: 'Bridal',
+      description: 'Reds, maroons and gold zari for the main event, styled with temple jewellery.',
     },
     {
-      key: 'board',
-      title: 'Board',
-      description: 'Drag work across stages. Limits and owners stay visible.',
+      key: 'festive',
+      title: 'Festive',
+      description: 'Lighter weaves and mirror work for puja, sangeet and a full calendar of gatherings.',
     },
     {
-      key: 'report',
-      title: 'Reports',
-      description: 'Velocity, cycle time and risk without building a spreadsheet.',
+      key: 'evening',
+      title: 'Evening',
+      description: 'Deep tones, clean cuts and one good piece of jewellery. Nothing else needed.',
     },
   ],
 }
 
 export const metrics = [
-  { value: 12000, suffix: '+', label: 'Teams on the platform' },
-  { value: 4.9, decimals: 1, label: 'Average rating' },
-  { value: 38, suffix: '%', label: 'Fewer status meetings' },
-  { value: 99.99, decimals: 2, suffix: '%', label: 'Uptime last 12 months' },
+  { value: 46, suffix: '+', label: 'Artisan families we work with' },
+  { value: 4.9, decimals: 1, label: 'Average fit rating' },
+  { value: 28, suffix: ' days', label: 'Made-to-measure lead time' },
 ]
 
 export const testimonials = {
-  eyebrow: 'Customers',
-  title: 'Teams that switched rarely go back',
+  eyebrow: 'Stories',
+  title: 'Worn to weddings, pujas and very late nights',
   items: [
     {
       quote:
-        'We replaced four tools in a week. The surprising part was how quiet it felt afterwards. People actually know what to work on.',
-      name: 'Maya Chen',
-      role: 'Head of Operations, Northwind',
-      hue: 250,
+        'My mother’s Banarasi was re-draped and repaired without anyone noticing. They treated it like it was theirs to be careful with.',
+      name: 'Ananya Rao',
+      role: 'Bride, Bengaluru',
+      hue: 352,
     },
     {
-      quote: 'The automations alone saved our team a full day every week. Set them up once and forget they exist.',
-      name: 'Daniel Okafor',
-      role: 'Engineering Manager, Vertex',
-      hue: 170,
+      quote:
+        'I wore the sharara for twelve hours — ceremony, dancing, the whole thing — and never once wanted to change.',
+      name: 'Riya Sharma',
+      role: 'Delhi',
+      hue: 158,
     },
     {
-      quote: 'I open it, I see the week, I close it. That is the whole review. It is the first planning tool I do not resent.',
-      name: 'Sofia Marin',
-      role: 'Product Lead, Lumen',
-      hue: 20,
+      quote:
+        'Ordered from London, measured over a video call, and it arrived pressed and boxed with a handwritten note.',
+      name: 'Sana Qureshi',
+      role: 'London',
+      hue: 268,
     },
     {
-      quote: 'Reports used to take me half a Friday. Now leadership reads a live page and asks better questions.',
-      name: 'Jonas Weber',
-      role: 'Director of Delivery, Halcyon',
-      hue: 300,
-    },
-    {
-      quote: 'Onboarding new hires went from two weeks of context to two days. Everything they need is already in the workspace.',
-      name: 'Priya Natarajan',
-      role: 'VP Engineering, Fathom',
-      hue: 120,
-    },
-    {
-      quote: 'Fast, focused and thoughtfully designed. It gets out of the way, which is the highest compliment I can give software.',
-      name: 'Lucas Ferreira',
-      role: 'Founder, Orbital',
-      hue: 40,
-    },
-  ],
-}
-
-export const pricing = {
-  eyebrow: 'Pricing',
-  title: 'Simple pricing that grows with you',
-  description: 'Start free. Upgrade when the team does.',
-  yearlyNote: 'Two months free',
-  tiers: [
-    {
-      name: 'Starter',
-      monthly: 0,
-      yearly: 0,
-      description: 'For small teams getting organised.',
-      cta: 'Start for free',
-      features: ['Up to 10 people', 'Unlimited projects', 'Boards and docs', 'Community support'],
-    },
-    {
-      name: 'Team',
-      monthly: 12,
-      yearly: 10,
-      description: 'For teams that need automation and reporting.',
-      cta: 'Start a 14 day trial',
-      popular: true,
-      features: [
-        'Everything in Starter',
-        'Automations and rules',
-        'Live reports and goals',
-        'Guests and client access',
-        'Priority support',
-      ],
-    },
-    {
-      name: 'Business',
-      monthly: 24,
-      yearly: 20,
-      description: 'For organisations with security needs.',
-      cta: 'Talk to sales',
-      features: ['Everything in Team', 'SSO and SCIM', 'Audit log and data residency', 'Custom roles', 'Dedicated success manager'],
+      quote:
+        'The kundan set looks like something out of my grandmother’s trunk and it did not cost like it.',
+      name: 'Divya Iyer',
+      role: 'Chennai',
+      hue: 320,
     },
   ],
 }
 
 export const faq = {
-  title: 'Questions, answered',
+  title: 'Before you order',
   items: [
     {
-      q: 'Can I import from the tools we already use?',
-      a: 'Yes. One-click importers cover Jira, Asana, Trello, Notion and Linear, and CSV import covers everything else. Comments, attachments and history come along.',
+      q: 'How do I find my size?',
+      a: 'Every product page has a measurement guide, and made-to-measure orders start with a 10-minute video or in-studio fitting. Sarees need no sizing — only the blouse does.',
     },
     {
-      q: 'Is there a free plan?',
-      a: 'The Starter plan is free for up to 10 people with unlimited projects. It is not a trial and it does not expire.',
+      q: 'Do you ship worldwide?',
+      a: 'Yes. India orders arrive in 3–5 days, international in 6–9 days, tracked end to end. Duties are calculated at checkout so nothing surprises you at the door.',
     },
     {
-      q: 'How does billing work for guests?',
-      a: 'Guests and clients are free on Team and Business plans. You only pay for members who can edit.',
+      q: 'What is your exchange policy?',
+      a: 'Ready-to-wear pieces can be exchanged within 14 days, unworn with tags. Made-to-measure pieces are final sale, but we will alter them until the fit is right.',
     },
     {
-      q: 'Where is my data stored?',
-      a: 'In the region you choose at signup, encrypted at rest and in transit. Business plans can pin data to the EU or US.',
-    },
-    {
-      q: 'Can I cancel at any time?',
-      a: 'Yes. Downgrade or cancel from your billing settings and your workspace stays readable forever.',
-    },
-    {
-      q: 'Do you offer discounts for startups or nonprofits?',
-      a: 'We do. Eligible startups get the Team plan free for a year, and nonprofits get 50% off every plan.',
+      q: 'Can you rework a family heirloom?',
+      a: 'That is much of what we do — re-draping, re-lining, restoring zari and remaking an old saree into a lehenga. Send us photos and we will tell you what is possible.',
     },
   ],
 }
 
 export const cta = {
-  title: 'Give your team a calmer week',
-  description: 'Join thousands of teams planning and shipping from one place.',
-  placeholder: 'you@company.com',
-  button: 'Get early access',
-  success: 'You are on the list. Watch your inbox.',
+  title: 'Join the Khair list',
+  description: 'First look at new weaves, restocks and studio appointments. One letter a month, nothing else.',
+  placeholder: 'you@email.com',
+  button: 'Subscribe',
+  success: 'You are on the list. See you next month.',
 }
 
 export const footer = {
-  blurb: 'A calm workspace for teams that ship.',
+  blurb: 'Handloom sarees, jewellery and party wear, made in small runs — run end to end by one person, so your email is always answered by the same hands that packed your box.',
   columns: [
-    { title: 'Product', links: ['Features', 'Integrations', 'Changelog', 'Pricing', 'Security'] },
-    { title: 'Company', links: ['About', 'Careers', 'Blog', 'Press', 'Contact'] },
-    { title: 'Resources', links: ['Docs', 'Guides', 'Templates', 'Community', 'Status'] },
-    { title: 'Legal', links: ['Privacy', 'Terms', 'Cookies', 'Licenses'] },
+    { title: 'Shop', links: ['Sarees', 'Jewellery', 'Party wear', 'New arrivals', 'Gift cards'] },
+    { title: 'Atelier', links: ['Our craft', 'Made to measure', 'Heirloom reworks', 'Book a fitting', 'Stores'] },
+    { title: 'Help', links: ['Shipping', 'Exchanges', 'Measurement guide', 'Care guide', 'Contact'] },
+    { title: 'Khair', links: ['About', 'Journal', 'Artisan clusters', 'Press', 'Careers'] },
   ],
-  legal: `© ${new Date().getFullYear()} Your Company, Inc.`,
+  legal: `© ${new Date().getFullYear()} Khair. Made with weavers across India.`,
 }

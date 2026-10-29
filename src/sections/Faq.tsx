@@ -3,6 +3,7 @@ import { Plus } from 'lucide-react'
 import { useState } from 'react'
 
 import { Container } from '../components/Container'
+import { OrnamentDivider } from '../components/Ornament'
 import { Reveal } from '../components/Reveal'
 import { SectionHeading } from '../components/SectionHeading'
 import { faq } from '../content'
@@ -11,7 +12,8 @@ import { cx } from '../lib/cx'
 export function Faq() {
   const [open, setOpen] = useState<number | null>(0)
   return (
-    <section className="border-t border-line py-24 sm:py-32">
+    <section className="relative border-t border-line py-24 sm:py-32">
+      <OrnamentDivider />
       <Container className="max-w-[760px]">
         <SectionHeading title={faq.title} />
         <Reveal className="mt-12">
@@ -26,7 +28,7 @@ export function Faq() {
                     onClick={() => setOpen(isOpen ? null : i)}
                     className="flex w-full items-center justify-between gap-6 px-6 py-5 text-left"
                   >
-                    <span className="text-[16px] font-medium">{item.q}</span>
+                    <span className="font-display text-[19px] font-medium">{item.q}</span>
                     <span
                       className={cx(
                         'depth relative grid size-7 shrink-0 place-items-center rounded-[9px] text-muted transition-transform duration-300',

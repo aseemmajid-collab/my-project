@@ -13,12 +13,13 @@ export function LogoMark({ className }: { className?: string }) {
       <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="url(#logo-g)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
         <defs>
           <linearGradient id="logo-g" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#ff9a6b" />
-            <stop offset="1" stopColor="#ffc46b" />
+          <stop offset="0" stopColor="#9c2b3f" />
+          <stop offset="1" stopColor="#a8762a" />
           </linearGradient>
         </defs>
-        <path d="M6 16 12 6l6 10" />
-        <circle cx="12" cy="18.5" r="1.2" fill="url(#logo-g)" stroke="none" />
+        <path d="M12 4c2.8 3.4 4.2 6.2 4.2 8.6a4.2 4.2 0 1 1-8.4 0C7.8 10.2 9.2 7.4 12 4Z" />
+        <path d="M12 12.6V20" />
+        <circle cx="12" cy="21.2" r="1.1" fill="url(#logo-g)" stroke="none" />
       </svg>
     </span>
   )
@@ -26,7 +27,7 @@ export function LogoMark({ className }: { className?: string }) {
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <a href="#" className={cx('inline-flex items-center gap-2.5 text-[15px] font-semibold tracking-tight text-fg', className)}>
+    <a href="#" className={cx('font-display inline-flex items-center gap-2.5 text-[21px] font-semibold tracking-[-0.01em] text-fg', className)}>
       <LogoMark />
       {brand.name}
     </a>

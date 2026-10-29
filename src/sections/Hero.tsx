@@ -4,7 +4,8 @@ import { ArrowRight, Sparkles } from 'lucide-react'
 import { Aurora } from '../components/Aurora'
 import { Button } from '../components/Button'
 import { Container } from '../components/Container'
-import { DashboardMock } from '../components/DashboardMock'
+import { MandalaBackdrop } from '../components/Ornament'
+import { HeroCollage } from '../components/Textile'
 import { hero } from '../content'
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -14,17 +15,19 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-36 pb-10 sm:pt-44">
       <Aurora />
+      <MandalaBackdrop className="right-[-160px] top-[40px] size-[520px] text-accent/50" />
+      <MandalaBackdrop className="left-[-180px] top-[420px] size-[380px] text-accent-2/45" reverse />
       <div aria-hidden className="grid-lines absolute inset-x-0 top-0 h-[720px]" />
       <div aria-hidden className="noise pointer-events-none absolute inset-0" />
 
       <Container className="relative">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <motion.a
-            href="#"
+            href="#collections"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
-            className="depth relative inline-flex h-8 items-center gap-2 rounded-[12px] bg-white/[0.04] pl-2 pr-3 text-[13px] text-muted backdrop-blur transition-colors hover:text-fg"
+            className="depth relative inline-flex h-8 items-center gap-2 rounded-[12px] bg-surface/70 pl-2 pr-3 text-[13px] text-muted backdrop-blur transition-colors hover:text-fg"
           >
             <Sparkles className="size-3.5 text-accent" />
             {hero.badge}
@@ -35,12 +38,12 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease }}
-            className="mt-6 text-balance text-[40px] font-semibold leading-[1.04] tracking-[-0.035em] sm:text-[64px] sm:leading-[1.02] md:text-[76px]"
+            className="font-display mt-6 text-balance text-[46px] font-medium leading-[0.98] tracking-[-0.015em] sm:text-[72px] sm:leading-[0.96] md:text-[84px]"
           >
             {line1}
             <br className="hidden sm:block" />{' '}
             {line2.split(hero.highlight)[0]}
-            <span className="text-gradient">{hero.highlight}</span>
+            <span className="text-gradient italic">{hero.highlight}</span>
             {line2.split(hero.highlight)[1]}
           </motion.h1>
 
@@ -78,7 +81,7 @@ export function Hero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 40, rotateX: 12 }}
+          initial={{ opacity: 0, y: 40, rotateX: 8 }}
           animate={{ opacity: 1, y: 0, rotateX: 0 }}
           transition={{ duration: 1.1, delay: 0.35, ease }}
           style={{ transformPerspective: 1400 }}
@@ -86,9 +89,9 @@ export function Hero() {
         >
           <div
             aria-hidden
-            className="absolute -inset-x-10 -top-10 bottom-0 -z-10 rounded-[40px] bg-[radial-gradient(60%_50%_at_50%_0%,rgb(255_122_69/0.22),transparent)] blur-2xl"
+            className="absolute -inset-x-10 -top-10 bottom-0 -z-10 rounded-[40px] bg-[radial-gradient(60%_50%_at_50%_0%,rgb(156_43_63/0.16),transparent)] blur-2xl"
           />
-          <DashboardMock />
+          <HeroCollage />
           <div aria-hidden className="pointer-events-none absolute inset-x-0 -bottom-px h-40 bg-gradient-to-t from-bg to-transparent" />
         </motion.div>
       </Container>

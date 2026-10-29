@@ -33,7 +33,7 @@ export function Nav() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className={cx(
           'relative flex h-14 w-full max-w-[1120px] items-center justify-between rounded-control-lg px-3 pl-4 transition-[background-color,box-shadow] duration-300',
-          scrolled || open ? 'depth bg-bg/70 shadow-[0_10px_40px_-20px_rgb(0_0_0/0.8)] backdrop-blur-xl' : 'bg-transparent',
+          scrolled || open ? 'depth bg-bg/80 shadow-[0_12px_40px_-24px_rgb(60_40_28/0.5)] backdrop-blur-xl' : 'bg-transparent',
         )}
       >
         <Logo />
@@ -42,7 +42,7 @@ export function Nav() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="inline-flex h-9 items-center rounded-[12px] px-3 text-[14px] text-muted transition-colors hover:bg-white/[0.06] hover:text-fg"
+                className="inline-flex h-9 items-center rounded-[12px] px-3 text-[14px] text-muted transition-colors hover:bg-surface-2 hover:text-fg"
               >
                 {link.label}
               </a>
@@ -62,7 +62,7 @@ export function Nav() {
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="grid size-9 place-items-center rounded-[12px] text-fg transition-colors hover:bg-white/[0.06] md:hidden"
+          className="grid size-9 place-items-center rounded-[12px] text-fg transition-colors hover:bg-surface-2 md:hidden"
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
@@ -84,7 +84,7 @@ export function Nav() {
                   <a
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="flex h-12 items-center rounded-control px-3 text-[16px] text-fg transition-colors hover:bg-white/[0.06]"
+                    className="flex h-12 items-center rounded-control px-3 text-[16px] text-fg transition-colors hover:bg-surface-2"
                   >
                     {link.label}
                   </a>

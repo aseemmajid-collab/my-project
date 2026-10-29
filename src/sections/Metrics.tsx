@@ -30,11 +30,11 @@ export function Metrics() {
   return (
     <section className="border-t border-line py-20">
       <Container>
-        <dl className="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
+        <dl className="grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3">
           {metrics.map((m, i) => (
             <Reveal key={m.label} delay={i * 0.08}>
-              <div className="flex flex-col gap-2 md:items-center md:text-center">
-                <dd className="order-1 text-[40px] font-semibold leading-none tracking-[-0.03em] sm:text-[48px]">
+              <div className="flex flex-col gap-2 items-start text-left sm:items-center sm:text-center">
+                <dd className="font-display order-1 text-[44px] font-medium leading-none tracking-[-0.02em] text-accent sm:text-[54px]">
                   <CountUp value={m.value} decimals={m.decimals} suffix={m.suffix} />
                 </dd>
                 <dt className="order-2 text-[14px] text-muted">{m.label}</dt>
